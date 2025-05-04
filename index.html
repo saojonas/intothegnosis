@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Into the Gnosis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Into the Gnosis - Collection</h1>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Buscar carta pelo nome..." oninput="filterCards()">
+    <select id="categoryFilter" onchange="filterCards()">
+      <option value="all">Todas as Categorias</option>
+      <option value="cc">Cartas de Caminho</option>
+      <option value="cp">Cartas de Perpetuidade</option>
+      <option value="cdc">Cartas de Decisão Cósmica</option>
+    </select>
+  </div>
+
+  <div id="cardContainer"></div>
+
+  <script src="cardData.js"></script>  
+
+  <script src="script.js"></script> 
+
+</body>
+</html>
