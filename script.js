@@ -25,7 +25,7 @@ const cards = {
   };
 
   function createCard(name, category) {
-    const path = `assets/${category}/${name.replace(/ /g, "_")}.png`;
+    const path = `assets/${category}/${name.replace(/ /g, "_")}.webp`;
 
     
 
